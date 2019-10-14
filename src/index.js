@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Search from "./search";
+import Search from "./components/search";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import PythonField from "./pythonfield";
-import FullStackField from "./fullstackfield";
+import PythonField from "./components/pythonfield";
+import FullStackField from "./components/fullstackfield";
 
 import "./styles.css";
 
