@@ -1,15 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import PythonField from "./pythonfield";
-import FullStackField from "./fullstackfield";
+import SkillsPage from "./pages/SkillsPage";
+import SkillsResult from "./components/SkillsResult";
+import HomePage from "./pages/HomePage";
+import MentorshipPage from "./pages/Mentorship";
+import JobsPage from "./pages/JobsPage";
 
 const Routes = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" />
-        <Route path="/paths/python" component={PythonField} />
-        <Route path="/paths/fullstack" component={FullStackField} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/skills" component={SkillsPage} />
+        <Route path="/skills/:skill" component={SkillsResult} />
+        <Route exact path="/mentorship" component={MentorshipPage} />
+        <Route path="/mentorship/mentors" component={""} />
+        <Route exact path="/jobs" component={JobsPage} />
+        <Route path="/jobs/:term" component={""} />
       </Switch>
     </Router>
   );

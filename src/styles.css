@@ -1,16 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background: url('bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
-  align-self: center;
-}
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 
 button {
   background: white;
@@ -39,20 +31,11 @@ h1 {
   padding: none;
 }
 
-h2 {
-
+.page-title {
+  text-align: center;
   font-size: 40px;
 }
 
-
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 10
-}
 
 .input-container {
   display: flex;
@@ -63,20 +46,13 @@ h2 {
   width: 100%;
 }
 
-input {
+form {
   display: flex;
   justify-content: center;
   align-self: center;
-  padding-left: 2%;
-  width: 40%;
-  height: 8vh;
-  border-radius: 40px;
-  outline: none;
-  box-shadow: 2px 2px 10px #38FFBE;
-  border: none;
-  margin: 0;
-  font-size: 2em;
+  
 }
+
 
 ul {
  list-style: none;
@@ -91,7 +67,7 @@ li {
   display: flex;
   align-self: center;
   background: white;
-  magin-top: 0;
+  margin-top: 0;
   margin-left: 1%;
   margin-right: 1%;
   padding: 2%;
@@ -105,8 +81,17 @@ li {
   height: 100vh;
   width: auto;
   display: flex;
-  flex-direction: column:
+  flex-direction: column;
   align-self: center;
   vertical-align: middle;
   justify-content: center;
+}
+
+.homepage-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-nav a {
+  margin: 2em;
 }
